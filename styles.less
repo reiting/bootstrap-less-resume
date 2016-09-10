@@ -25,7 +25,7 @@ hr {
 }
 
 .header  {
-    background-color: powderblue;
+    background-color: @main-color;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ hr {
             a {
                 text-decoration: none;
                 color: white;
-                background-color: powderblue;
+                background-color: @main-color;
 
                 a:hover {
                     color: darkblue;
@@ -70,8 +70,9 @@ hr {
 .about p {
     display: inline-block;
     margin-left: 15em;
+}
 
-    #col {
+#col {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
@@ -80,14 +81,14 @@ hr {
     column-gap: 80px;
     padding-left: 12em;
     padding-right: 12em;
-    }
 }
 
 .technical p {
     display: inline-block;
     margin-left: 15em;
+}
 
-    #col2 {
+#col2 {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
@@ -96,7 +97,6 @@ hr {
     column-gap: 80px;
     padding-left: 12em;
     padding-right: 12em;
-    }
 }
 
 .education li {
@@ -118,7 +118,7 @@ hr {
 
 .footer {
     text-align: center;
-    color: powderblue;
+    color: @main-color;
     text-decoration: none;
 
     ul li {
@@ -135,7 +135,7 @@ form {
     height: 400px;
     padding: 1em;
     border-radius: 1em;
-    background: #a3c5cf;
+    background: @main-color;
     text-align: center;
 }
 
@@ -149,6 +149,7 @@ label {
     text-align: left;
     color: white;
     font-size: 0.75em;
+    padding-left: 13.5em;
 }
 
 input, textarea {
@@ -183,7 +184,7 @@ button {
     width: 200px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: #a3c5cf; 
+    color: @main-color; 
     height: 2em;
     background-color: white;
 }
@@ -206,5 +207,6 @@ button {
 
 .links {
     text-decoration: none;
-    color: powderblue;
+    color: @main-color;
+    padding-right: 2em;
 }

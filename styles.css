@@ -18,7 +18,7 @@ hr {
   width: 75%;
 }
 .header {
-  background-color: powderblue;
+  background-color: purple;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,7 +41,7 @@ hr {
 .header ul li a {
   text-decoration: none;
   color: white;
-  background-color: powderblue;
+  background-color: purple;
 }
 .header ul li a a:hover {
   color: darkblue;
@@ -57,7 +57,7 @@ hr {
   display: inline-block;
   margin-left: 15em;
 }
-.about p #col {
+#col {
   -moz-column-count: 2;
   -webkit-column-count: 2;
   column-count: 2;
@@ -71,7 +71,7 @@ hr {
   display: inline-block;
   margin-left: 15em;
 }
-.technical p #col2 {
+#col2 {
   -moz-column-count: 2;
   -webkit-column-count: 2;
   column-count: 2;
@@ -97,7 +97,7 @@ hr {
 }
 .footer {
   text-align: center;
-  color: powderblue;
+  color: purple;
   text-decoration: none;
 }
 .footer ul li {
@@ -112,7 +112,7 @@ form {
   height: 400px;
   padding: 1em;
   border-radius: 1em;
-  background: #a3c5cf;
+  background: purple;
   text-align: center;
 }
 form div + div {
@@ -124,6 +124,7 @@ label {
   text-align: left;
   color: white;
   font-size: 0.75em;
+  padding-left: 13.5em;
 }
 input,
 textarea {
@@ -155,7 +156,7 @@ button {
   width: 200px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  color: #a3c5cf;
+  color: purple;
   height: 2em;
   background-color: white;
 }
@@ -173,5 +174,6 @@ button {
 }
 .links {
   text-decoration: none;
-  color: powderblue;
+  color: purple;
+  padding-right: 2em;
 }
