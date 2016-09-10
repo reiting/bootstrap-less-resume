@@ -130,27 +130,28 @@ hr {
 }
 
 form {
-    /* Just to center the form on the page */
     margin: 0 auto;
     width: 40%;
     height: 400px;
-    /* To see the outline of the form */
     padding: 1em;
     border-radius: 1em;
-    background: #a3c5cf
+    background: #a3c5cf;
+    text-align: center;
+}
 
-    form div + div {
+form div + div {
     margin-top: 1em;
+}
     
-    label {
-    /* To make sure that all labels have the same size and are properly aligned */
+label {
     display: block;
     width: 90px;
     text-align: left;
     color: white;
     font-size: 0.75em;
+}
 
-    input, textarea {
+input, textarea {
     font: 1em sans-serif;
     width: 200px;
     -moz-box-sizing: border-box;
@@ -158,21 +159,25 @@ form {
     border-radius: 5px; 
     height: 2em;
     border: 1px solid grey;
+}
 
-    input:focus, textarea:focus {
+input:focus, textarea:focus {
     /* To give a little highlight on active elements */
-    border-color: grey
+    border-color: grey; 
+}
 
-    textarea {
+textarea {
     vertical-align: top;
     height: 10em;
+}
 
-    .button {
+.button {
     /* To position the buttons to the same position of the text fields */
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
     
-    button {
+button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     width: 200px;
@@ -181,29 +186,23 @@ form {
     color: #a3c5cf; 
     height: 2em;
     background-color: white;
+}
 
-    ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
    font-style: italic;
+}
 
-    :-moz-placeholder {
+:-moz-placeholder {
    font-style: italic;  
+}
 
-    ::-moz-placeholder {
+::-moz-placeholder {
    font-style: italic;  
+}
 
-    :-ms-input-placeholder {  
+:-ms-input-placeholder {  
    font-style: italic; 
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
+}
 
 .links {
     text-decoration: none;
