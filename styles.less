@@ -1,4 +1,5 @@
 @main-color: purple;
+@hover-color: blue;
 
 p {
     margin-top: 0em;
@@ -45,17 +46,22 @@ hr {
             display: inline;
             padding-left: 30px;
 
+
             a {
                 text-decoration: none;
                 color: white;
                 background-color: @main-color;
+                &:hover, &:active {color:@hover-color;}
 
-                a:hover {
-                    color: darkblue;
-                }
             }
         }
     }
+}
+
+.border-radius(@radius: 6px) {
+    -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+            border-radius: @radius;
 }
 
 .push {
@@ -134,7 +140,7 @@ form {
     width: 40%;
     height: 400px;
     padding: 1em;
-    border-radius: 1em;
+    .border-radius;
     background: @main-color;
     text-align: center;
 }
@@ -157,7 +163,7 @@ input, textarea {
     width: 200px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 5px; 
+    .border-radius; 
     height: 2em;
     border: 1px solid grey;
 }
@@ -179,14 +185,14 @@ textarea {
 }
     
 button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
     width: 200px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     color: @main-color; 
     height: 2em;
+    .border-radius;
     background-color: white;
+    border: 1px solid grey;
 }
 
 ::-webkit-input-placeholder {
@@ -209,4 +215,22 @@ button {
     text-decoration: none;
     color: @main-color;
     padding-right: 2em;
+
+    a {
+        color: @main-color;
+        text-decoration: none;
+        &:hover, &:active {color:@hover-color;}
+    }
+}
+
+.border(@background-color) when (@background-color = white) {
+    border: 1 px solid grey;
+}
+
+.border(@text-@background-color) when not (@background-color-color = white) {
+    border: 1 px solid grey;
+}
+
+.border(@backgound-color-color) {
+    border: 1px solid #f3f3f3;
 }
